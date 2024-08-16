@@ -1,10 +1,10 @@
 cli_game: 
 	javac -d target src/guesser/cli/GuesserCLI.java;
-	java -cp target/ guesser.cli.GuesserCLI;
+	java -cp target guesser.cli.GuesserCLI;
 
 gui_game:
-	javac -d target/ src/guesser/gui/GUI.java src/guesser/gui/Game.java;
-	java -cp target/ guesser.gui.Game
+	javac -d target -sourcepath src src/guesser/gui/Launcher.java;
+	java -cp target guesser.gui.Launcher
 
 clean:
 	rm -rf target/guesser
