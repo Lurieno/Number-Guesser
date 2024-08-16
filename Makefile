@@ -3,8 +3,8 @@ cli_game:
 	java -cp target/ guesser.cli.GuesserCLI;
 
 gui_game:
-	javac -d target/ src/guesser/gui/JFrameWrapper.java src/guesser/gui/GuesserGUI.java;
-	java -cp target/ guesser.gui.GuesserGUI
+	javac -d target/ src/guesser/gui/GUI.java src/guesser/gui/Game.java;
+	java -cp target/ guesser.gui.Game
 
 clean:
 	rm -rf target/guesser
