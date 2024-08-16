@@ -1,9 +1,11 @@
+package guesser.gui;
 // It is better to not extend JFrame and rather make a "private JFrame frame" in a frame class
 // In this case you can choose what JFrame functions to offer
 // java program to create a multiple  JWindow .( where one window is the owner of the other )< 
 import java.awt.event.*; 
 import java.awt.*; 
-import javax.swing.*; 
+import javax.swing.*;
+
 class solveit extends JFrame implements ActionListener { 
   
     // frame 

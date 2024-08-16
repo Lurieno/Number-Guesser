@@ -1,3 +1,5 @@
+package guesser.cli;
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -8,7 +10,7 @@ import java.io.BufferedReader;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Guesser {
+public class GuesserCLI {
     public static final Scanner sc = new Scanner(System.in);
     public static final int max = 10;
     public static void main(String[] args) {
