@@ -13,10 +13,11 @@ public class Guesser {
     public static final int max = 10;
     public static void main(String[] args) {
         Boolean quit = false;
+        String statfile = "target/stat.csv";
         
         try {
             // Results will be written to this file. Avoid opening and closing every time
-            FileWriter fw = new FileWriter("stat.csv", true);
+            FileWriter fw = new FileWriter(statfile, true);
             
             // Game loop
             while (true) {
@@ -79,7 +80,7 @@ public class Guesser {
 
         // Print results file
         try {
-            FileReader fr = new FileReader("stat.csv");
+            FileReader fr = new FileReader(statfile);
             BufferedReader br = new BufferedReader(fr);
             
             if (br.ready()) {

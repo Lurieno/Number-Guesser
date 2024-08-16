@@ -1,9 +1,9 @@
 run: 
-	javac -d Guesser Guesser.java;
-	java -cp Guesser Guesser;
+	javac -d target/Guesser src/org/lurien/Guesser.java;
+	java -cp target/Guesser Guesser;
 
 clean:
-	rm -rf Guesser
+	rm -rf target/Guesser
 
 rm_stats:
-	rm stat.csv
+	rm target/stat.csv
