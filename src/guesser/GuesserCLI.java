@@ -1,4 +1,4 @@
-package guesser.cli;
+package guesser;
 
 import java.util.Scanner;
 import java.util.Random;

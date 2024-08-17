@@ -1,4 +1,4 @@
-package guesser.gui.utils;
+package guesser.utils;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;

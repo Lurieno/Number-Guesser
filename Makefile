@@ -1,14 +1,16 @@
 cli_game: 
-	javac -d target src/guesser/cli/GuesserCLI.java;
-	java -cp target guesser.cli.GuesserCLI;
+	javac -d target src/guesser/GuesserCLI.java;
+	java -cp target guesser.GuesserCLI;
 
 gui_game:
-	javac -d target -sourcepath src src/guesser/gui/Launcher.java;
-	java -cp target guesser.gui.Launcher
+	javac -d target -sourcepath src src/guesser/Launcher.java;
+	java -cp target guesser.Launcher;
+
+server:
+	javac -d target -sourcepath src src/guesser/utils/multiplayer/Client.java src/guesser/utils/multiplayer/Server.java;
 
 clean:
 	rm -rf target/guesser
-	rm -rf target/Test
 
 rm_stats:
 	rm target/stat.csv
